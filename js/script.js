@@ -61,3 +61,15 @@ function printCol(ourTeam){
     row.append(col);
 }
 
+const btn = document.querySelector('button');
+btn.addEventListener('click', ()=>{
+    const newMember =  {
+      name: document.getElementById('name').value,
+      position: document.getElementById('position').value,
+      picture: document.getElementById('picture').value,
+    }
+
+    ourTeam.push(newMember);
+    printCol(newMember);
+});
+
