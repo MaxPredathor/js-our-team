@@ -46,7 +46,7 @@ for(const val in ourTeam){
 
 function printCol(ourTeam){
     const col = document.createElement("div");
-    col.classList.add("col-4");
+    col.classList.add("col-4", "my-3");
     const schema = 
     `
     <div class="card text-start">
